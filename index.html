@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV | Paisal</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 20px;
+  background: #050505;
+  color: #ff941f;
+  font-family: monospace;
+}
+header, nav, section {
+  border: 1px solid #ff7900;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background: #090909;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+h1, h2 {
+  color: #ff8c00;
+}
+p, a {
+  line-height: 1.8;
+}
+nav a {
+  display: inline-block;
+  color: #ffad55;
+  text-decoration: none;
+  margin: 8px 12px 8px 0;
+}
+.logo {
+  border: 2px solid #ff7900;
+  width: 100px;
+  height: 100px;
+  display: grid;
+  place-items: center;
+  font-size: 35px;
+  font-weight: bold;
+}
+.subtitle {
+  color: #ffb56b;
+}
+.line {
+  border-top: 1px solid #ff7900;
+  margin: 18px 0;
+}
+.item {
+  border-left: 3px solid #ff7900;
+  padding-left: 12px;
+  margin: 18px 0;
+}
+button {
+  background: #ff7900;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 18px;
+  font-family: monospace;
+  font-weight: bold;
+  cursor: pointer;
+}
+footer {
+  text-align: center;
+  color: #a86b35;
+  padding: 15px;
+}
+@media (max-width: 480px) {
+  body { padding: 10px; }
+  header, nav, section { padding: 15px; }
+  h1 { font-size: 22px; }
+}
+@media print {
+  body { background: white; color: black; }
+  header, nav, section {
+    border-color: #888;
+    background: white;
+  }
+  nav, button { display: none; }
+  h1, h2, p, a { color: black; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <strong>&gt;_ PAISAL@CV:~</strong>
+    <p>LEARN · BUILD · CREATE</p>
+  </div>
+  <button onclick="window.print()">CETAK / PDF</button>
+</header>
+
+<nav>
+  <a href="#tentang">Tentang</a>
+  <a href="#keahlian">Keahlian</a>
+  <a href="#pendidikan">Pendidikan</a>
+  <a href="#kontak">Kontak</a>
+</nav>
+
+<section id="tentang">
+  <div class="logo">P</div>
+  <h1>Paisal Muhamad Alamsah</h1>
+  <p class="subtitle">Pelajar | Calon Web Developer</p>
+  <div class="line"></div>
+  <h2>01. Tentang Saya</h2>
+  <p>
+    Halo! Saya Paisal, seorang pelajar yang tertarik
+    pada teknologi, jaringan komputer, dan pengembangan
+    website. Saya senang belajar hal baru dan ingin terus
+    mengembangkan keterampilan di bidang IT.
+  </p>
+</section>
+
+<section id="keahlian">
+  <h2>02. Keahlian</h2>
+  <div class="line"></div>
+  <div class="item">
+    <strong>HTML &amp; CSS</strong>
+    <p>Membuat dan mendesain halaman website.</p>
+  </div>
+  <div class="item">
+    <strong>Networking</strong>
+    <p>Mempelajari jaringan komputer dan subnetting.</p>
+  </div>
+  <div class="item">
+    <strong>Linux &amp; Termux</strong>
+    <p>Mengenal terminal dan perintah dasar Linux.</p>
+  </div>
+  <div class="item">
+    <strong>Cisco Packet Tracer</strong>
+    <p>Belajar simulasi dan konfigurasi jaringan.</p>
+  </div>
+</section>
+
+<section id="pendidikan">
+  <h2>03. Pendidikan</h2>
+  <div class="line"></div>
+  <div class="item">
+    <strong>Sekolah Menengah Kejuruan (SMK)</strong>
+    <p>Pelajar kelas XI.</p>
+    <p>Minat belajar: teknologi informasi dan jaringan.</p>
+  </div>
+</section>
+
+<section id="kontak">
+  <h2>04. Kontak</h2>
+  <div class="line"></div>
+  <p>Email: paisalmuhammad.a@gmail.com</p>
+  <p>Instagram: @paisalmhmd12</p>
+  <p>Lokasi: Bandung, Pasir Honje</p>
+</section>
+
+<footer>
+  <p>© 2026 PAISAL | BUILT WITH HTML &amp; CSS</p>
+  <p>LEARN · BUILD · CREATE</p>
+</footer>
+
+</body>
+</html>
